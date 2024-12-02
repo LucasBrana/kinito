@@ -15,8 +15,10 @@ int main()
 
     while (true) {
         led = 1; // Allumer la LED
+        printf("On \n");
         ThisThread::sleep_for(PERIOD_MS / 2); // Attendre la moitié de la période
         led = 0; // Éteindre la LED
+        printf("Off \n");
         ThisThread::sleep_for(PERIOD_MS / 2); // Attendre l'autre moitié de la période
     }
 }
